@@ -2,10 +2,10 @@ trigger:
 - main
 
 pool:
-  name: PoolAlex   # Aquí va el nombre EXACTO de tu agente
+  name: Default  # Usa el pool donde está tu agente
 
 steps:
 - script: |
-    echo Hola, tu pipeline esta funcionando
+    echo Hola, tu pipeline está funcionando
     echo Proyecto ejecutado correctamente
   displayName: "Pipeline de prueba"
