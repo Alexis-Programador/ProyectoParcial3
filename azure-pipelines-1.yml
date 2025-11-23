@@ -1,0 +1,24 @@
+# Pipeline de prueba para agente Default
+# Trigger automático cuando haya cambios en main
+trigger:
+- main
+
+# Usando tu agente self-hosted en Default
+pool:
+  name: Default
+
+steps:
+# Primer paso: mensaje simple
+- script: echo "Hola, tu pipeline está funcionando"
+  displayName: "Mensaje de prueba 1"
+
+# Segundo paso: mensaje múltiple
+- script: |
+    echo "Proyecto ejecutado correctamente"
+    echo "Puedes agregar más pasos para build, test y deploy"
+  displayName: "Mensaje de prueba 2"
+
+# Tercer paso: ejemplo de comando adicional
+- script: |
+    echo "Este paso es solo de ejemplo para verificar ejecución en Default"
+  displayName: "Mensaje de prueba 3"
