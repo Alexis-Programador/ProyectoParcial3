@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: ALEXIS   # Aquí va el nombre EXACTO de tu agente
+  name: PoolAlex   # Aquí va el nombre EXACTO de tu agente
 
 steps:
 - script: |
