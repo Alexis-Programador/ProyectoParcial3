@@ -1,0 +1,11 @@
+trigger:
+- main
+
+pool:
+  name: ALEXIS   # Aquí va el nombre EXACTO de tu agente
+
+steps:
+- script: |
+    echo Hola, tu pipeline esta funcionando
+    echo Proyecto ejecutado correctamente
+  displayName: "Pipeline de prueba"
