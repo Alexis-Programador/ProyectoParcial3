@@ -1,0 +1,9 @@
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+- script: echo "Integración GitHub → Azure funcionando correctamente"
+  displayName: 'Prueba de integración'
