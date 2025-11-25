@@ -2,8 +2,14 @@ trigger:
 - main
 
 pool:
-  name: Default
+  vmImage: 'ubuntu-latest'
 
 steps:
 - script: echo "Integración GitHub → Azure funcionando correctamente"
   displayName: 'Prueba de integración'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'AzureConnectionProyectoParcial3'
+    appName: 'NOMBRE_DE_TU_APP_SERVICE'
+    package: $(System.DefaultWorkingDirectory)
