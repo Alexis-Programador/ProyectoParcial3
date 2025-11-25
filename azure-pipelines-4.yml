@@ -1,0 +1,13 @@
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+- task: AzureWebApp@1
+  displayName: 'Deploy a Azure App Service'
+  inputs:
+    azureSubscription: 'AzureConnectionProyectoParcial3'
+    appName: 'ProyectoParcial3'
+    package: '.'
