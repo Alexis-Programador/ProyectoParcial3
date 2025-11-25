@@ -1,0 +1,19 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18.x'
+
+- script: |
+    echo "Construyendo proyecto..."
+    ls
+  displayName: 'Listar archivos'
+
+- script: |
+    echo "Proyecto listo para desplegar"
+  displayName: 'Fin'
