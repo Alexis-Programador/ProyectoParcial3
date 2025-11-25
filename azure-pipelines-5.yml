@@ -2,11 +2,11 @@ trigger:
 - main
 
 pool:
-  name: Default   # aquí va el nombre de tu pool de agentes
+  name: Default
 
 steps:
 - script: |
-    echo "Usando el agente local de Alexis"
+    echo "Pipeline corriendo con agente local"
     whoami
-    echo "Proyecto ejecutado"
+    echo "Todo bien"
   displayName: 'Ejecutar en agente local'
