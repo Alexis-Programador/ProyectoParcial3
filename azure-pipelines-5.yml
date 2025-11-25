@@ -2,18 +2,11 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: Default   # aquí va el nombre de tu pool de agentes
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '18.x'
-
 - script: |
-    echo "Construyendo proyecto..."
-    ls
-  displayName: 'Listar archivos'
-
-- script: |
-    echo "Proyecto listo para desplegar"
-  displayName: 'Fin'
+    echo "Usando el agente local de Alexis"
+    whoami
+    echo "Proyecto ejecutado"
+  displayName: 'Ejecutar en agente local'
