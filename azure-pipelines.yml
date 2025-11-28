@@ -11,6 +11,8 @@ variables:
   LOCATION: "centralus"
   SQL_SERVER_NAME: "nombre-unico-servidor123"
   DATABASE_NAME: "myDatabase"
+  ADMIN_USER: "sqladminuser"        # <-- AGREGA UN USUARIO AQUÍ
+  ADMIN_PASSWORD: "$(SQL_ADMIN_PASSWORD)"   # <-- VARIABLE SECRETA
 
 steps:
 - task: AzureCLI@2
